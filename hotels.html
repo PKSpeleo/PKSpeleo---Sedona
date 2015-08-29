@@ -39,103 +39,267 @@
             <!-- Форма выбора отеля -->
             <form class="hotel-form clearfix">
 
-                <!-- Подполе выбора производителя -->
-
-                <section class="manufacturer">
-                    <h2 class="manufacturer-text">Производители:</h2>
-                    <ul class="manufacturer-checkbox">
+                <!-- Подполе выбора инфраструктуры -->
+                <section class="form-infrastructure">
+                    <h2 class="form-header">
+                        Инфраструктура:
+                    </h2>
+                    <ul class="infrastructure-checkbox">
                         <li>
                             <label>
                                 <input  type="checkbox"
-                                        name="Manufacturer"
-                                        value="Baxter of California"
+                                        name="Infrastructure"
+                                        value="Бассейн"
                                         checked>
-                                            Baxter of California
+                                            Бассейн
                             </label>
                         </li>
                         <li>
                             <label>
                                 <input  type="checkbox"
-                                        name="Manufacturer"
-                                        value="Mr Natty">
-                                            Mr Natty
+                                        name="Parking"
+                                        value="Парковка">
+                                            Парковка
                             </label>
                         </li>
                         <li>
                             <label>
-                                <input  type="checkbox"
-                                        name="Manufacturer"
-                                        value="Suavecito"
-                                        checked>
-                                            Suavecito
+                                <input type="checkbox"
+                                        name="Wi-Fi"
+                                        value="Wi-Fi">
+                                            Wi-Fi
                                 </label>
                         </li>
+                    </ul>
+                </section>
+                <!-- Подполе выбора типа жилья -->
+                <section class="form-housing">
+                    <h2 class="form-header">
+                        Тип жилья:
+                    </h2>
+                    <ul class="housing-checkbox">
                         <li>
                             <label>
                                 <input  type="checkbox"
-                                        name="Manufacturer"
-                                        value="Malin+Goetz">
-                                            Malin+Goetz
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input  type="checkbox"
-                                        name="Manufacturer"
-                                        value="Murray's">
-                                            Murray's
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input  type="checkbox"
-                                        name="Manufacturer"
-                                        value="American crew"
+                                        name="Hotel"
+                                        value="Гостиница"
                                         checked>
-                                            American crew
+                                            Гостиница
                             </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input  type="checkbox"
+                                        name="Motel"
+                                        value="Мотель"
+                                        checked>
+                                            Мотель
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input  type="checkbox"
+                                        name="Apartments"
+                                        value="Апартаменты"
+                                        checked>
+                                            Апартаменты
+                                </label>
                         </li>
                     </ul>
                 </section>
 
-                <!-- Подполе выбора группы товаров -->
-
-                <section class="group">
-                    <h2 class="group-text">Группы товаров:</h2>
-                    <ul class="group-checkbox">
-                        <li>
-                            <label>
-                                <input  type="radio"
-                                        name="group"
-                                        value="БРИТВЕННЫЕ ПРИНАДЛЕЖНОСТИ">
-                                            Бритвенные принадлежности
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input  type="radio"
-                                        name="group"
-                                        value="СРЕДСТВА ДЛЯ УХОДА"
-                                        checked>
-                                            Средства ухода
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input  type="radio"
-                                        name="group"
-                                        value="АКСЕССУАРЫ">
-                                            Аксессуары
-                            </label>
-                        </li>
-                    </ul>
+                <section class="form-price-range">
+                    <h2 class="form-header">
+                        Стоимость в сутки (Р):
+                    </h2>
+                    <div class="range-controls">
+                        <div class="scale">
+                            <div style="margin-left:50px;width:100px;" class="bar">
+                            </div>
+                        </div>
+                        <div class="toggle min-toggle"></div>
+                        <div class="toggle max-toggle"></div>
+                    </div>
+                    <div class="price-controls">
+                        от <input   class="min-price"
+                                    type="text"
+                                    value="0"
+                                    name="min-price">
+                        до <input   class="max-price"
+                                    type="text"
+                                    value="3000"
+                                    name="max-price">
+                    </div>
                 </section>
 
                 <!-- Кнопка отправки производителей и групп товаров -->
-
-                <input class="btn man-group" type="submit" value="ПОКАЗАТЬ">
+                <input class="form-show-btn" type="submit" value="ПОКАЗАТЬ">
 
             </form>
+
+            <!-- Секция сортировки результатов по форме -->
+            <section class="sort clearfix">
+                <div class="fonund">
+                    <span class="found-text">
+                        Найдено:
+                    </span>
+                    <span class="found-text found-result">
+                        3
+                    </span>
+                </div>
+                <div class="sort">
+                    <span class="sort-text-title">
+                        Сортировка:
+                    </span>
+                    <span class="sort-text active">
+                        По цене
+                    </span>
+                    <span class="sort-text">
+                        По типу
+                    </span>
+                    <span class="sort-text">
+                        По рейтенгу
+                    </span>
+                </div>
+                <div class="up-down">
+                    <span class="btn-up">
+                    </span>
+                    <span class="btn-down active">
+                    </span>
+                </div>
+            </section>
+
+            <!-- Секция резултатами - списком гостиниц -->
+            <section class="hotel-list clearfix">
+                <article class="hotel-element">
+                    <figure>
+                        <img    class="hotel-image"
+                                src="#"
+                                width="150" height="150"
+                                alt="Amara rosort & SPA">
+                        <figcaption>
+                            <div class="short-info">
+                                <span class="hotel-name">
+                                    Amara resort & SPA
+                                </span>
+                                <span class="hotel-housing">
+                                    Гостиница
+                                </span>
+                                <span class="hotel-price">
+                                    От
+                                        <span class="hotlp-price-result">
+                                            3500
+                                        </span>
+                                    р.
+                                </span>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <div class="price-buy">
+                        <a href="#" class="more-btn">
+                            Подробнее
+                        </a>
+                        <a href="#" class="booking-btn">
+                            Забронировать
+                        </a>
+                    </div>
+                    <div class="rating-place">
+                        <div class="housing-stars 4stars"></div>
+                        <span class="rating">
+                            Рейтинг:
+                        </span>
+                        <span class="rating-result">
+                            8,5
+                        </span>
+                    </div>
+                </article>
+
+                <article class="hotel-element">
+                    <figure>
+                        <img    class="hotel-image"
+                                src="#"
+                                width="150" height="150"
+                                alt="Desert Quailinn">
+                        <figcaption>
+                            <div class="short-info">
+                                <span class="hotel-name">
+                                    Desert Quailinn
+                                </span>
+                                <span class="hotel-housing">
+                                    Мотель
+                                </span>
+                                <span class="hotel-price">
+                                    От
+                                        <span class="hotlp-price-result">
+                                            2000
+                                        </span>
+                                    р.
+                                </span>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <div class="price-buy">
+                        <a href="#" class="more-btn">
+                            Подробнее
+                        </a>
+                        <a href="#" class="booking-btn">
+                            Забронировать
+                        </a>
+                    </div>
+                    <div class="rating-place">
+                        <div class="housing-stars 2stars"></div>
+                        <span class="rating">
+                            Рейтинг:
+                        </span>
+                        <span class="rating-result">
+                            8,9
+                        </span>
+                    </div>
+                </article>
+
+                <article class="hotel-element">
+                    <figure>
+                        <img    class="hotel-image"
+                                src="#"
+                                width="150" height="150"
+                                alt="Villas at Poco Diablo">
+                        <figcaption>
+                            <div class="short-info">
+                                <span class="hotel-name">
+                                    Villas at Poco Diablo
+                                </span>
+                                <span class="hotel-housing">
+                                    Апартаменты
+                                </span>
+                                <span class="hotel-price">
+                                    От
+                                        <span class="hotlp-price-result">
+                                            4000
+                                        </span>
+                                    р.
+                                </span>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <div class="price-buy">
+                        <a href="#" class="more-btn">
+                            Подробнее
+                        </a>
+                        <a href="#" class="booking-btn">
+                            Забронировать
+                        </a>
+                    </div>
+                    <div class="rating-place">
+                        <div class="housing-stars 3stars"></div>
+                        <span class="rating">
+                            Рейтинг:
+                        </span>
+                        <span class="rating-result">
+                            9,2
+                        </span>
+                    </div>
+                </article>
+            </section>
 
 
 
@@ -148,7 +312,7 @@
         <footer class="main-footer">
             <div class="container clearfix">
                 <section class="footer-tag">
-                    <span> #visitSEDONA</span>
+                    <span>#visitSEDONA</span>
                 </section>
                 <section class="footer-social">
                     <a href="#" class="Social-btn social-btn-t">Твиттер</a>
