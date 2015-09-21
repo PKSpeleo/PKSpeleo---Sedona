@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Sedona резиновая от ПК</title>
-        <link href="/css/style.css" rel="stylesheet">
+        <link href="./css/style.css" rel="stylesheet">
     </head>
 
      <!-- Хэадер (меню сверху) -->
@@ -20,7 +20,7 @@
                             <a href="#">Фото и видео</a>
                         </li>
                         <li>
-                            <a href="#" class="main-logo"></a>
+                            <a href="#" class="main-logo">City of Sedona</a>
                         </li>
                         <li>
                             <a href="#">Карта штата</a>
@@ -41,7 +41,7 @@
             <form class="hotel-form clearfix">
 
                 <!-- Подполе выбора инфраструктуры -->
-                <section class="form-infrastructure">
+                <section class="form form-infrastructure">
                     <h2 class="form-header">
                         Инфраструктура:
                     </h2>
@@ -74,7 +74,7 @@
                     </ul>
                 </section>
                 <!-- Подполе выбора типа жилья -->
-                <section class="form-housing">
+                <section class="form form-housing">
                     <h2 class="form-header">
                         Тип жилья:
                     </h2>
@@ -109,7 +109,7 @@
                     </ul>
                 </section>
 
-                <section class="form-price-range">
+                <section class="form form-price-range">
                     <h2 class="form-header">
                         Стоимость в сутки (Р):
                     </h2>
@@ -117,7 +117,7 @@
                         от <input   class="min-price"
                                     type="text"
                                     value="0"
-                                    name="min-price">
+                                  name="min-price">
                         до <input   class="max-price"
                                     type="text"
                                     value="3000"
@@ -131,17 +131,19 @@
                         <div class="toggle min-toggle"></div>
                         <div class="toggle max-toggle"></div>
                     </div>
+                    <!-- Кнопка отправки производителей и групп товаров -->
+
+                    <input class="form-show-btn" type="submit" value="ПОКАЗАТЬ">
 
                 </section>
 
-                <!-- Кнопка отправки производителей и групп товаров -->
-                <input class="form-show-btn" type="submit" value="ПОКАЗАТЬ">
+
 
             </form>
 
             <!-- Секция сортировки результатов по форме -->
             <section class="sort clearfix">
-                <div class="fonund">
+                <div class="found">
                     <span class="found-text">
                         Найдено:
                     </span>
@@ -149,7 +151,7 @@
                         3
                     </span>
                 </div>
-                <div class="sort">
+                <div class="sorting">
                     <span class="sort-text-title">
                         Сортировка:
                     </span>
@@ -164,141 +166,138 @@
                     </a>
                 </div>
                 <div class="up-down">
-                    <a class="btn-up" href="#">
+                    <a class="btn-up" href="#">Up
                     </a>
-                    <a class="btn-down active" href="#">
+                    <a class="btn-down active" href="#">Down
                     </a>
                 </div>
             </section>
 
-            <!-- Секция резултатами - списком гостиниц -->
+            <!-- Секция результатами - списком гостиниц -->
             <section class="hotel-list clearfix">
-                <article class="hotel-element">
-                    <figure>
-                        <img    class="hotel-image"
-                                src="img/main-photo-hotel-ar-spa.jpg"
-                                width="135" height="90"
-                                alt="Amara rosort & SPA">
-                        <figcaption>
-                            <div class="short-info">
-                                <h2 class="hotel-name">
-                                    Amara resort & SPA
-                                </h2>
-                                <span class="hotel-housing">
-                                    Гостиница
+                <article class="hotel-element clearfix">
+                    <img    class="hotel-image"
+                            src="img/main-photo-hotel-ar-spa.jpg"
+                            width="135" height="90"
+                            alt="Amara rosort & SPA">
+                    <div class="short-info">
+                        <h2 class="hotel-name">
+                            Amara resort & SPA
+                        </h2>
+                        <span class="hotel-housing">
+                            Гостиница
+                        </span>
+                        <span class="hotel-price">
+                            От
+                                <span class="hotel-price-result">
+                                    3500
                                 </span>
-                                <span class="hotel-price">
-                                    От
-                                        <span class="hotlp-price-result">
-                                            3500
-                                        </span>
-                                    р.
-                                </span>
-                            </div>
-                        </figcaption>
-                    </figure>
-                    <div class="price-buy">
-                        <a href="#" class="more-btn">
-                            Подробнее
-                        </a>
-                        <a href="#" class="booking-btn">
-                            Забронировать
-                        </a>
+                            р.
+                        </span>
+                        <div class="price-buy">
+                            <a href="#" class="more-btn">
+                                Подробнее
+                            </a>
+                            <a href="#" class="booking-btn">
+                                Забронировать
+                            </a>
+                        </div>
                     </div>
+
                     <div class="rating-place">
                         <div class="housing-stars 4stars"></div>
-                        <span class="rating">
-                            Рейтинг:
-                        </span>
-                        <span class="rating-result">
-                            8,5
-                        </span>
+                        <div class="housing-rating">
+                            <span class="rating">
+                                Рейтинг:
+                            </span>
+                            <span class="rating-result">
+                                8,5
+                            </span>
+                        </div>
                     </div>
                 </article>
 
-                <article class="hotel-element">
-                    <figure>
-                        <img    class="hotel-image"
-                                src="img/main-photo-hotel-dq.jpg"
-                                width="135" height="90"
-                                alt="Desert Quailinn">
-                        <figcaption>
-                            <div class="short-info">
-                                <h2 class="hotel-name">
-                                    Desert Quailinn
-                                </h2>
-                                <span class="hotel-housing">
-                                    Мотель
-                                </span>
-                                <span class="hotel-price">
-                                    От
-                                        <span class="hotlp-price-result">
-                                            2000
-                                        </span>
-                                    р.
-                                </span>
-                            </div>
-                        </figcaption>
-                    </figure>
-                    <div class="price-buy">
+                <article class="hotel-element clearfix">
+                    <img    class="hotel-image"
+                            src="img/main-photo-hotel-dq.jpg"
+                            width="135" height="90"
+                            alt="Desert Quailinn">
+                    <div class="short-info">
+                        <h2 class="hotel-name">
+                            Desert Quailinn
+                        </h2>
+                        <span class="hotel-housing">
+                            Мотель
+                        </span>
+                        <span class="hotel-price">
+                            От
+                            <span class="hotel-price-result">
+                                2000
+                            </span>
+                            р.
+                        </span>
+                        <div class="price-buy">
                         <a href="#" class="more-btn">
                             Подробнее
                         </a>
                         <a href="#" class="booking-btn">
                             Забронировать
                         </a>
+                        </div>
                     </div>
+
                     <div class="rating-place">
                         <div class="housing-stars 2stars"></div>
-                        <span class="rating">
-                            Рейтинг:
-                        </span>
-                        <span class="rating-result">
-                            8,9
-                        </span>
+                        <div class="housing-rating">
+                            <span class="rating">
+                                Рейтинг:
+                            </span>
+                            <span class="rating-result">
+                                8,9
+                            </span>
+                        </div>
                     </div>
                 </article>
 
-                <article class="hotel-element">
-                    <figure>
-                        <img    class="hotel-image"
-                                src="img/main-photo-hotel-vpd.jpg"
-                                width="135" height="90"
-                                alt="Villas at Poco Diablo">
-                        <figcaption>
-                            <div class="short-info">
-                                <h2 class="hotel-name">
-                                    Villas at Poco Diablo
-                                </h2>
-                                <span class="hotel-housing">
-                                    Апартаменты
+                <article class="hotel-element clearfix">
+                    <img    class="hotel-image"
+                            src="img/main-photo-hotel-vpd.jpg"
+                            width="135" height="90"
+                            alt="Villas at Poco Diablo">
+                    <div class="short-info">
+                        <h2 class="hotel-name">
+                            Villas at Poco Diablo
+                        </h2>
+                        <span class="hotel-housing">
+                            Апартаменты
+                        </span>
+                        <span class="hotel-price">
+                            От
+                                <span class="hotel-price-result">
+                                4000
                                 </span>
-                                <span class="hotel-price">
-                                    От
-                                        <span class="hotlp-price-result">
-                                            4000
-                                        </span>
-                                    р.
-                                </span>
-                            </div>
-                        </figcaption>
-                    </figure>
-                    <div class="price-buy">
-                        <a href="#" class="more-btn">
-                            Подробнее
-                        </a>
-                        <a href="#" class="booking-btn">
-                            Забронировать
-                        </a>
+                            р.
+                        </span>
+                        <div class="price-buy">
+                            <a href="#" class="more-btn">
+                                Подробнее
+                            </a>
+                            <a href="#" class="booking-btn">
+                                Забронировать
+                            </a>
+                        </div>
                     </div>
+
                     <div class="rating-place">
                         <div class="housing-stars 3stars"></div>
-                        <span class="rating">
-                            Рейтинг:
-                        </span>
-                        <span class="rating-result">
-                            9,2
-                        </span>
+                        <div class="housing-rating">
+                            <span class="rating">
+                                Рейтинг:
+                            </span>
+                            <span class="rating-result">
+                                9,2
+                            </span>
+                        </div>
                     </div>
                 </article>
             </section>
@@ -313,15 +312,15 @@
 
         <footer class="main-footer">
             <div class="container clearfix">
-                <section class="footer-tag">
+                <section class="footer footer-tag">
                     <span>#visitSEDONA</span>
                 </section>
-                <section class="footer-social">
+                <section class="footer footer-social">
                     <a href="#" class="Social-btn social-btn-t">Твиттер</a>
                     <a href="#" class="Social-btn social-btn-fb">Фейсбук</a>
                     <a href="#" class="Social-btn social-btn-y">Ю-туб</a>
                 </section>
-                <section class="footer-copyright">
+                <section class="footer footer-copyright">
                     <span>Website by</span>
                     <a href="http://htmlacademy.ru" class="footer-logo">
                         <img    src="img/footer-by-logo.png"

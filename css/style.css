@@ -1,5 +1,19 @@
 body
     {
+        /*Подкладываем фон на index*/
+/*
+        background-image: url(/img/sedona-index-768.jpg);
+*/
+
+         /*Подкладываем фон на hotels*/
+/*
+        background-image: url(/img/sedona-hotels-768.jpg);
+*/
+
+        background-repeat: no-repeat;
+        background-position: 50% 0%;
+
+
         font-family: PTSans;
         font-weight: bold;
         color: #333;
@@ -21,3 +35,237 @@ h2
         font-size: 14px;
         line-height: normal;
     }
+.clearfix::after
+{
+    /* Визуализация для удобства */
+    outline: 5px solid magenta;
+    /* Визуализация для удобства */
+
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.main-header
+{
+    /* Визуализация для удобства */
+    outline: 2px solid red;
+    padding: 2px;
+    /* Визуализация для удобства */
+
+    min-width: 768px;
+/*
+    background-color: white;
+*/
+}
+.container
+{
+    /* Визуализация для удобства */
+    outline: 2px solid magenta;
+/*
+    min-height: 20px;
+*/
+    padding: 5px;
+    /* Визуализация для удобства */
+
+
+    margin:0px auto;
+    width: 786px;
+/*
+    background-color: white;
+*/
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.2)
+
+}
+.main-navigation
+{
+    /* Визуализация для удобства */
+    outline: 2px solid blue;
+    padding: 5px;
+    /* Визуализация для удобства */
+
+    width: 768px;
+}
+
+.intro
+{
+    /* Визуализация для удобства */
+    outline: 2px solid yellow;
+    padding: 5px;
+    height: 50px;
+    /* Визуализация для удобства */
+
+    width: 768px;
+    margin:0px auto;
+}
+.intro-zigzag-mask
+{
+    /* Визуализация для удобства */
+    outline: 2px solid blue;
+    min-height: 40px;
+    /* Визуализация для удобства */
+
+    width: 768px;
+    margin:0px auto;
+}
+.mainpage-content
+{
+    /* Визуализация для удобства */
+    outline: 2px solid blue;
+    padding: 5px;
+    min-height: 120px;
+    /* Визуализация для удобства */
+
+
+}
+
+.mainpage-text
+{
+   /* Визуализация для удобства */
+    outline: 2px solid blue;
+    padding: 5px;
+    min-height: 120px;
+    /* Визуализация для удобства */
+
+
+}
+.reason-with-photo
+{
+    /* Визуализация для удобства */
+    outline: 2px solid blue;
+    padding: 5px;
+    /* Визуализация для удобства */
+}
+.reason
+{
+    /* Визуализация для удобства */
+    outline: 2px solid blue;
+    padding: 5px;
+    /* Визуализация для удобства */
+
+    width:250px;
+    float: left;
+}
+.reason-photo
+{
+    float:left;
+}
+
+.advice,
+.reason-no-photo,
+.main-footer,
+.hotel-form
+{
+    /* Визуализация для удобства */
+    outline: 2px solid blue;
+    padding: 5px;
+    /* Визуализация для удобства */
+}
+.advice-item,
+.reason-no-photo .reason,
+.main-footer .footer,
+.hotel-form .form
+{
+    /* Визуализация для удобства */
+    outline: 2px solid blue;
+    padding: 5px;
+    /* Визуализация для удобства */
+    float: left;
+    width: 230px;
+    margin-right: 20px;
+}
+.advice-item:last-child,
+.reason-no-photo .reason:last-child,
+.main-footer .footer:last-child,
+.hotel-form .form:last-child
+{
+    margin-right: 0px;
+}
+.search-form-title
+{
+    /* Визуализация для удобства */
+    outline: 2px solid blue;
+    padding: 5px;
+    min-height: 120px;
+    /* Визуализация для удобства */
+
+
+}
+.search-form
+{
+    /* Визуализация для удобства */
+    outline: 2px solid blue;
+    padding: 5px;
+    min-height: 120px;
+    /* Визуализация для удобства */
+}
+.map-place
+{
+    /* Визуализация для удобства */
+    outline: 2px solid blue;
+    padding: 5px;
+    min-height: 120px;
+    /* Визуализация для удобства */
+}
+.main-footer
+{
+    /* Визуализация для удобства */
+    outline: 2px solid red;
+    padding: 2px;
+    /* Визуализация для удобства */
+
+    min-width: 768px;
+    position: relative;
+/*
+    background-color: white;
+*/
+}
+.sort
+{
+    /* Визуализация для удобства */
+    outline: 2px solid red;
+    padding: 2px;
+    /* Визуализация для удобства */
+}
+.sort .found,
+.sort .sorting,
+.sort .up-down,
+.hotel-list .hotel-image,
+.hotel-list .short-info
+{
+    /* Визуализация для удобства */
+    outline: 2px solid red;
+    padding: 2px;
+    /* Визуализация для удобства */
+
+    float:  left;
+}
+.hotel-list
+{
+    /* Визуализация для удобства */
+    outline: 2px solid red;
+    padding: 2px;
+    /* Визуализация для удобства */
+}
+.hotel-element
+{
+    /* Визуализация для удобства */
+    outline: 2px solid green;
+    padding: 2px;
+    /* Визуализация для удобства */
+}
+.rating-place,
+.rating-place .housing-stars,
+.rating-place .housing-rating
+{
+    /* Визуализация для удобства */
+    outline: 2px solid green;
+    padding: 2px;
+    min-height: 10px;
+    min-width: 100px;
+    max-width: 100px;
+    /* Визуализация для удобства */
+
+    float:right;
+}
+
